@@ -1,0 +1,44 @@
+// Add these imports if missing
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Mic
+import androidx.lifecycle.viewmodel.compose.viewModel
+
+class MainActivity : ComponentActivity() {
+    // ... [keep all your existing code] ...
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this)
+
+        setContent {
+            // Get the database instance
+            val database = (application as MyApp).database
+            val chatViewModel: ChatViewModel = viewModel(
+                factory = ViewModelFactory(database.chatDao())
+            )
+            
+            var voiceText by remember { mutableStateOf("") }
+
+            LaunchedEffect(Unit) {
+                voicePermissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
+            }
+
+            MaterialTheme {
+                Surface {
+                    LLMChatUI(
+                        onVoiceInput = { text ->
+                            voiceText = text
+                            chatViewModel.sendMessage(text)
+                        }
+                    )
+                }
+            }
+        }
+        // ... [rest of your onCreate] ...
+    }
+
+    // ... [keep all your other methods] ...
+}

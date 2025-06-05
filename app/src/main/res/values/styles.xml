@@ -1,0 +1,80 @@
+<resources>
+    <style name="app_name" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <!-- Explicit NoActionBar style for clarity -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="hintTextColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+    </style>
+    <style name="CustomFABStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@android:color/black</item>
+        <item name="tint">@android:color/white</item>
+    </style>
+    <style name="CustomFAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="CircleImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <string name="open">Open navigation drawer</string>
+    <string name="close">Close navigation drawer</string>
+</resources>
+
+
+
+<!--<resources>-->
+<!--    <style name="app_name" parent="Theme.MaterialComponents.DayNight.DarkActionBar">-->
+<!--        <item name="colorPrimary">@color/black</item>-->
+<!--        <item name="colorPrimaryVariant">@color/black</item>-->
+<!--        <item name="colorOnPrimary">@android:color/white</item>-->
+<!--        <item name="android:statusBarColor">@color/black</item>-->
+<!--    </style>-->
+<!--    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--    </style>-->
+<!--    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+<!--        <item name="boxStrokeColor">@color/white</item>-->
+<!--        <item name="boxStrokeWidth">2dp</item>-->
+<!--        <item name="hintTextColor">@android:color/white</item>-->
+<!--        <item name="android:textColorHint">@android:color/white</item>-->
+<!--    </style>-->
+
+<!--    <style name="CustomFABStyle" parent="Widget.MaterialComponents.FloatingActionButton">-->
+<!--        <item name="backgroundTint">@android:color/black</item>-->
+<!--        <item name="tint">@android:color/white</item>-->
+<!--    </style>-->
+<!--    <style name="CustomFAB" parent="Widget.MaterialComponents.FloatingActionButton">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--    </style>-->
+<!--    <style name="CircleImage">-->
+<!--        <item name="cornerFamily">rounded</item>-->
+<!--        <item name="cornerSize">50%</item>-->
+<!--    </style>-->
+<!--    <string name="open">Open navigation drawer</string>-->
+<!--    <string name="close">Close navigation drawer</string>-->
+<!--</resources>-->

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PocketLLM</string>
+    <string name="login_title">Login</string>
+    <string name="signup_title">Sign Up</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="login_button">Login</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="logout_button">Sign out</string>
+    <string name="history_button">History</string>
+    <string name="history_title">Chat History</string>
+    <string name="welcome_title">Welcome to PocketLLM</string>
+    <string name="welcome_message">Your AI assistant is ready to help with scheduling, notes, and more!</string>
+    <string name="continue_button">Continue</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="history">History</string>
+    <string name="sign_out">Sign out</string>
+    <string name="clear_history_entry">Clear History</string>
+</resources>
